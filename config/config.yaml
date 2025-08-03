@@ -1,0 +1,17 @@
+database:
+  type:"sqlite"
+  path:"database/news.db"
+
+data:
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  archive_dir: "data/archive"
+
+process:
+  batch_size: 1000
+  remove_duplicates: true
+  clean_text: true
+
+logging:
+    level: "INFO"
+    format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
